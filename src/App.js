@@ -12,7 +12,7 @@ const ProductManager = require("./ProductManager");
 const app = express();
 const PORT = 8080;
 
-const productManager = new ProductManager("./productos.txt");
+const productManager = new ProductManager("./products/products.json");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
